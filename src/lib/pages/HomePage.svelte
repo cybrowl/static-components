@@ -1,5 +1,5 @@
 <script>
-	import Button from '../components/basic_elements/Button.svelte';
+	import UploadButton from '../components/basic_elements/UploadButton.svelte';
 	import PageNavigation from '../components/navigation/PageNavigation.svelte';
 
 	import {createEventDispatcher} from 'svelte';
@@ -15,7 +15,7 @@
 			<div class="grid_layout">
 				<div class="navigation_main_layout">
 					<PageNavigation {navigationItems}>
-						<Button label="Upload" />
+						<UploadButton />
 					</PageNavigation>
 				</div>
 			</div>
