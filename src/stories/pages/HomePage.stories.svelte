@@ -29,6 +29,12 @@
 	args={{
 		modal_visible: modal_visible,
 		is_authenticated: true,
-		navigationItems: navigationItems
+		navigationItems: navigationItems,
+		assets: [
+			{
+				type: 'image',
+				url: 'https://lwq3d-eyaaa-aaaag-aatza-cai.raw.icp0.io/image/snap/7X3NHRYRSTRM13KHY5XXVHYEWE'
+			}
+		]
 	}}
 />
