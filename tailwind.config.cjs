@@ -18,18 +18,9 @@ const config = {
 				'mist-grey': '#B1B0B8',
 				'moon-grey': '#C6C4CC',
 				'light-grey': '#E2E1E6',
-				'tulip-purple': '#6259C8',
-				'cloud-purple': '#EBE9FF',
-				'primary-purple': '#7A71DE',
-				'foggy-purple': '#A099F4',
-				'bubble-purple': '#B6AFFC',
-				'lilalic-purple': '#968CFF',
-				'spring-leaf-green': '#5BC859',
-				'error-red': '#FC3030',
-				'mute-red': '#F0627C'
-			},
-			boxShadow: {
-				gray: '0 10px 15px -3px rgba(58, 58, 80, 0.5), 0 4px 6px -2px rgba(58, 58, 80, 0.3)'
+				'light-green': '#cad2c5',
+				'leaf-green': '#84a98c',
+				'grass-green': '#354f52'
 			},
 			screens: {
 				'3xl': '2222px'

@@ -67,9 +67,6 @@
 	.fill_dark_grey {
 		@apply fill-dark-grey;
 	}
-	.fill_primary_purple {
-		@apply fill-primary-purple;
-	}
 	.fill_castle_grey {
 		@apply fill-castle-grey;
 	}
@@ -80,15 +77,6 @@
 		@apply fill-none;
 	}
 
-	.hover_bubble_purple:hover {
-		@apply fill-bubble-purple;
-	}
-	.hover_primary_purple:hover {
-		@apply fill-primary-purple;
-	}
-	.hover_tulip_purple:hover {
-		@apply fill-tulip-purple;
-	}
 	.hover_grey:hover {
 		@apply fill-grey;
 	}

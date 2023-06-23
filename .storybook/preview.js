@@ -8,7 +8,7 @@ export const parameters = {
 			...themes.dark,
 			appBg: '#32313D',
 			brandImage:
-				'https://raw.githubusercontent.com/cybrowl/dsign-components/main/src/lib/assets/static_logo.png'
+				'https://raw.githubusercontent.com/cybrowl/static-components/main/src/lib/assets/static_logo.png'
 		},
 		light: {...themes.normal, appBg: 'white'},
 		stylePreview: true,
