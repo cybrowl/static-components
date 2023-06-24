@@ -54,10 +54,6 @@
 		@apply mr-12 text-2xl 2xl:text-3xl 3xl:text-4xl font-bold text-light-green flex flex-row items-center;
 	}
 
-	.logo_img {
-		@apply w-6 h-6 2xl:h-8 2xl:w-8 3xl:h-9 3xl:w-9 mr-1;
-	}
-
 	.navItem {
 		@apply font-sans font-bold text-white no-underline mr-8;
 	}
