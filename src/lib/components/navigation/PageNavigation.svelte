@@ -47,7 +47,7 @@
 
 <style lang="postcss">
 	.pageNavigation {
-		@apply flex flex-row justify-between items-center mt-6 mb-8;
+		@apply flex flex-col lg:flex-row md:flex-row justify-between items-start gap-6 mt-6 mb-8;
 	}
 
 	.logo {
