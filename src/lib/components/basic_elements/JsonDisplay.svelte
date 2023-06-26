@@ -28,7 +28,7 @@
 		{/each}
 	</div>
 {:else}
-	<div>Loading...</div>
+	<div class="display">Loading...</div>
 {/if}
 
 <style lang="postcss">
