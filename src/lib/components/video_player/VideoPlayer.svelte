@@ -1,35 +1,42 @@
 <script>
 	export let asset = {};
+
 	let videoElement;
 	let isPlaying = false;
-	let volume = 0.5;
+	let volume = 1;
 
-	const playPause = () => {
-		isPlaying = !isPlaying;
-		if (isPlaying) videoElement.play();
-		else videoElement.pause();
-	};
-
-	const changeVolume = () => {
-		videoElement.volume = volume;
-	};
-
-	const toggleFullscreen = () => {
-		if (!document.fullscreenElement) {
-			videoElement.requestFullscreen();
+	function playPause() {
+		if (videoElement.paused) {
+			videoElement.play();
+			isPlaying = true;
 		} else {
-			document.exitFullscreen();
+			videoElement.pause();
+			isPlaying = false;
 		}
-	};
+	}
+
+	function changeVolume() {
+		videoElement.volume = volume;
+	}
+
+	function toggleFullscreen() {
+		if (document.fullscreenElement) {
+			document.exitFullscreen();
+		} else {
+			videoElement.requestFullscreen();
+		}
+	}
 </script>
 
-<div class="video-player">
-	<video bind:this={videoElement} src={asset.url}>
+<div class="video-container">
+	<video class="video" bind:this={videoElement} src={asset.url} playsinline>
 		<track kind="captions" src="captions.vtt" srclang="en" label="English" />
 	</video>
-	<div class="controls">
-		<button on:click={playPause}>{isPlaying ? 'Pause' : 'Play'}</button>
-		<label>
+	<div class="control-container">
+		<button class="button" on:click={playPause} ontouchstart={playPause}
+			>{isPlaying ? 'Pause' : 'Play'}</button
+		>
+		<label class="volume-label">
 			Volume:
 			<input
 				type="range"
@@ -38,51 +45,36 @@
 				step="0.1"
 				bind:value={volume}
 				on:input={changeVolume}
+				ontouchstart={changeVolume}
+				class="volume"
 			/>
 		</label>
-		<button on:click={toggleFullscreen}>Toggle Fullscreen</button>
+		<button
+			class="button"
+			on:click={toggleFullscreen}
+			ontouchstart={toggleFullscreen}>Toggle Fullscreen</button
+		>
 	</div>
 </div>
 
-<style>
-	.video-player {
-		height: 100%;
-		position: relative;
-		overflow: hidden;
+<style lang="postcss">
+	.video-container {
+		@apply relative bg-black text-white;
 	}
 
-	video {
-		height: 100%;
-		width: 100%;
-		object-fit: cover;
+	.video {
+		@apply w-full h-full object-cover;
 	}
 
-	.controls {
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		width: 100%;
-		padding: 10px;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		background-color: rgba(0, 0, 0, 0.7);
-		color: #ddd;
-		backdrop-filter: blur(5px);
+	.control-container {
+		@apply absolute bottom-0 left-0 w-full bg-black bg-opacity-60 flex items-center justify-between px-4 py-2 md:flex-row flex-col;
 	}
 
-	button {
-		background-color: transparent;
-		border: none;
-		color: #ddd;
-		cursor: pointer;
+	.button {
+		@apply text-white mb-2 md:mb-0 cursor-pointer;
 	}
 
-	button:hover {
-		color: #fff;
-	}
-
-	input[type='range'] {
-		width: 100px;
+	.volume {
+		@apply w-24 ml-2;
 	}
 </style>

@@ -37,7 +37,7 @@
 			},
 			{
 				type: 'video',
-				url: 'https://ifw4i-haaaa-aaaag-abrja-cai.raw.icp0.io/asset/a0eee020-995-3ac-f7d-f2941a076139'
+				url: 'https://ifw4i-haaaa-aaaag-abrja-cai.raw.icp0.io/asset/425f2123-fa6-45c-a0d-af4110acea3d'
 			}
 		]
 	}}
