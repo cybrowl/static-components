@@ -33,7 +33,11 @@
 		assets: [
 			{
 				type: 'image',
-				url: 'https://lwq3d-eyaaa-aaaag-aatza-cai.raw.icp0.io/image/snap/7X3NHRYRSTRM13KHY5XXVHYEWE'
+				url: 'https://images.squarespace-cdn.com/content/v1/54437e21e4b048c830a0cff1/1518623641072-CMO3UYC0OD9X6TGRLDRJ/meat.jpg?format=2500w'
+			},
+			{
+				type: 'video',
+				url: 'https://ifw4i-haaaa-aaaag-abrja-cai.raw.icp0.io/asset/a0eee020-995-3ac-f7d-f2941a076139'
 			}
 		]
 	}}

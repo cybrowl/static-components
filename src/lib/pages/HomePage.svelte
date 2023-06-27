@@ -2,6 +2,7 @@
 	import UploadButton from '../components/basic_elements/UploadButton.svelte';
 	import PageNavigation from '../components/navigation/PageNavigation.svelte';
 	import Image from '../components/basic_elements/Image.svelte';
+	import VideoPlayer from '../components/video_player/VideoPlayer.svelte';
 
 	import {createEventDispatcher} from 'svelte';
 	const dispatch = createEventDispatcher();
@@ -24,6 +25,9 @@
 					{#each assets as asset}
 						{#if asset.type === 'image'}
 							<Image {asset} />
+						{/if}
+						{#if asset.type === 'video'}
+							<VideoPlayer {asset} />
 						{/if}
 					{/each}
 				</div>
