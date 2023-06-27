@@ -6,3 +6,6 @@ export {default as JsonDisplay} from './components/basic_elements/JsonDisplay.sv
 
 // navigation
 export {default as PageNavigation} from './components/navigation/PageNavigation.svelte';
+
+// video player
+export {default as VideoPlayer} from './components/video_player/VideoPlayer.svelte';
